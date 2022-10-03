@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 0;
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    margin: 0%;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    / position: fixed;
+    /z-index: 10;
+}
+
+.navlink-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+.navlink-container2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.container-large {
+    max-width: 1080px;
+    margin: 0 auto;
+    z-index: 1;
+    padding-top: 5rem;
+
+}
+
+.first-section{
+    background-color: rgb(185, 207, 229);
+}
+.first-section-text-container {
+    display: flex;
+}
+
+.first-section-img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-title1 {
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+}
+
+.column-img1 {
+    background-size: cover;
+    flex-basis: 60%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.padding-bottom {
+    padding-bottom: 2rem;
+}
+
+.margin-bottom {
+    margin-bottom: 2rem;
+
+}
+
+.icon-title {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.btn-big {
+    padding: 10px 0px;
+    border: 0px;
+    width: 50%;
+}
+
+.btn-small {
+    padding: 3px 10px;
+    border: 0;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: white;
+}
