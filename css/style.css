@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+body {
+    font-size: 14px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
 img {
     margin: 0;
     display: block;
@@ -11,15 +20,16 @@ img {
 }
 
 ul {
-    margin: 0%;
+    /* margin: 0%; */
     list-style: none;
-    display: flex;
+    /* display: flex; */
     gap: 2rem;
 }
 
 h1 {
     font-size: 5rem;
 }
+
 
 h3 {
     font-size: 2.5rem;
@@ -29,13 +39,34 @@ h4 {
     font-size: 1.3rem;
 }
 
+h5 {
+    font-size: 18px;
+}
+
 p {
-    font-size: 1rem;
+    font-size: 16px;
+    font-weight: lighter;
 }
 
 a {
     text-decoration: none;
     color: grey;
+}
+
+nav {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav-container ul {
+     margin: 0%;
+     list-style: none;
+     display: flex;
+     gap: 2rem;
 }
 
 
@@ -81,6 +112,16 @@ a {
 
 }
 
+.container-full {
+    width: 100%;
+}
+
+.container-footer {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 6rem;
+}
+
 .container-border {
     max-width: 920px;
     margin: 0 auto;
@@ -93,19 +134,32 @@ a {
     display: flex;
     column-gap: 2rem;
     padding-bottom: 4rem;
-
 }
 
-.first-section {
+.color-section {
     background-color: rgb(185, 207, 229);
 }
 
 .second-section {
     margin-top: 7rem;
+    padding-bottom: 8rem;
 }
 
-.first-section-text-container {
+.row {
     display: flex;
+    flex-wrap: wrap;
+}
+
+
+.row-buisness {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.row-space {
+    display: flex;
+    justify-content: space-between;
 }
 
 .first-section-img-container {
@@ -113,18 +167,18 @@ a {
     flex-direction: column;
 }
 
-.column-title1 {
-    display: flex;
+.col-30 {
     flex-basis: 30%;
     flex-direction: column;
 }
 
-.column-img1 {
+.col-70 {
     background-size: cover;
     flex-basis: 70%;
     object-fit: cover;
     background-repeat: no-repeat;
 }
+
 
 .middle-column {
     width: 33%;
@@ -134,10 +188,18 @@ a {
     border-bottom: 1px solid;
 }
 
+
 .middle-column1 {
     padding: 1rem;
 }
 
+.padding-s {
+    padding: 1rem;
+}
+
+.padding-m {
+    padding: 3rem;
+}
 
 .padding-bottom2 {
     padding-bottom: 2rem;
@@ -147,12 +209,29 @@ a {
     padding-bottom: 1rem;
 }
 
+.padding-bottom4 {
+    padding-bottom: 4rem;
+}
+
+.padding-bottom6 {
+    padding-bottom: 6rem;
+}
+
 .padding-top {
     padding-top: 2rem;
 }
 
+.padding-top8 {
+    padding-top: 8rem;
+}
+
 .margin-bottom {
     margin-bottom: 2rem;
+
+}
+
+.margin-bottom-big {
+    margin-bottom: 10rem;
 
 }
 
@@ -202,6 +281,11 @@ a {
     padding-top: 0.5rem;
 }
 
+.column-title {
+    padding-bottom: 1.5rem;
+}
+
+
 .hr-line {
     height: 1px;
     background-color: grey;
@@ -227,15 +311,100 @@ a {
     padding: 2rem;
 }
 
-.info1 {
-    flex-direction: column;
-    flex-basis: 75%;
+.box-container {
+    display: flex;
+}
+
+.box-33 {
+    width: 30%;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
 
 }
 
-.info2 {
+.box-50 {
+    width: 40%;
     display: flex;
-    flex-direction: column;
-    flex-basis: 25%;
-    padding-right: 2rem;
+    overflow: hidden;
+}
+
+.img-box {
+    display: block;
+    aspect-ratio: 1/1;
+    padding: 4vh;
+    width: 60%;
+    filter: invert();
+    object-fit: contain;
+}
+
+
+.FAQ .container>div {
+    padding-left: 0;
+    position: relative;
+    border-bottom: 1px solid grey;
+}
+
+.FAQ-arrow {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    bottom: 1rem;
+}
+
+.FAQ-arrow i {
+    padding-top: 2rem;
+}
+
+.answer {
+    position: relative;
+    opacity: 0;
+    transition: top 1.5s, opacity 1.5s;
+}
+
+.FAQ ul {
+    display: none;
+    padding: 2rem;
+}
+
+.FAQ li {
+    list-style: square;
+    padding-top: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+[type=checkbox]:checked+label ul {
+    display: block;
+}
+
+[type=checkbox]:checked+label .answer {
+    top: 0;
+    opacity: 1;
+}
+
+[type=checkbox] {
+    display: none;
+}
+
+.row-space a {
+    color: white;
+}
+
+.container-footer a {
+    padding: 0.5rem;
+    display: block;
+}
+
+.container-footer h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.hr-footer {
+    color: white;
+    height: 1px;
+    border-bottom: 1px solid white;
+    width: 15%;
+    padding-top: 6rem;
 }
