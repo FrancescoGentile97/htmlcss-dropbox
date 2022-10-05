@@ -21,9 +21,30 @@
                 <div class="navlink-container">
                     <img src="img/logo-small.png" alt="">
                     <ul>
-                        <li><a href="#">Perchè DropBox</a></li>
-                        <li><a href="#">Funzioni</a></li>
-                        <li><a href="#">Piani e Prezzi</a></li>
+                        <!-- dropdown first link -->
+                        <li class="dropdown"><a href="#">Perchè DropBox</a>
+                            <div class="li-dropdown">
+                                <a href="#">link1</a>
+                                <a href="#">link2</a>
+                                <a href="#">link3</a>
+                            </div>
+                        </li>
+                        <!-- dropdown second link -->
+                        <li class="dropdown"><a href="#">Funzioni</a>
+                            <div class="li-dropdown">
+                                <a href="#">link1</a>
+                                <a href="#">link2</a>
+                                <a href="#">link3</a>
+                            </div>
+                        </li>
+                        <!-- dropdown 3th link -->
+                        <li class="dropdown"><a href="#">Piani e Prezzi</a>
+                            <div class="li-dropdown">
+                                <a href="#">link1</a>
+                                <a href="#">link2</a>
+                                <a href="#">link3</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -58,9 +79,10 @@
                         </p>
                         <button class="btn-big btn-blue margin-bottom">Inizia la tua prova gratuita</button>
 
-                        <p class="padding-bottom">Anulla in qualsiasi momento</p>
-
-                        <i class="fa-sharp fa-solid fa-arrow-down icon-title"></i>
+                        <p class="padding-bottom">Annulla in qualsiasi momento</p>
+                        <div class="arrow-container">
+                           <a href="#free-trial"><i class="fa-sharp fa-solid fa-arrow-down arrow-animation"></i></a> 
+                        </div>
                     </div>
                     <div class="col-70">
                         <img src="img/jumbo.png" alt="">
@@ -72,7 +94,7 @@
         <section class="second-section">
             <!-- title second section -->
             <div class="container">
-                <div class="title-container">
+                <div id="free-trial" class="title-container">
                     <h3>Trova il piano business che fa per te</h3>
                 </div>
                 <!-- checkbox second section -->
@@ -106,17 +128,17 @@
                         <!-- icon 1 -->
                         <div class="column-icon-description">
                             <i class="fa-solid fa-user"></i>
-                            1 utente
+                           <p>1 utente</p> 
                         </div>
                         <!-- icon 2 -->
                         <div class="column-icon-description">
                             <i class="fa-solid fa-folder"></i>
-                            5 TB di spazio di archiviazione sicuro
+                          <p>5 TB di spazio di archiviazione sicuro</p>
                         </div>
                         <!-- icon 3 -->
                         <div class="column-icon-description">
                             <i class="fa-solid fa-share-nodes"></i>
-                            Funzioni di produttività premium e condivisione file semplice e sicura
+                           <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
                         </div>
                         <!-- blue column button -->
                         <div class="column-button">
@@ -167,17 +189,17 @@
                         <!-- icon 1 -->
                         <div class="column-icon-description">
                             <i class="fa-solid fa-users"></i>
-                            3 o più utenti
+                           <p>3 o più utenti</p>
                         </div>
                         <!-- icon 2 -->
                         <div class="column-icon-description">
                             <i class="fa-solid fa-folder"></i>
-                            Tutto lo spazio di cui ha bisogno il tuo team
+                           <p>Tutto lo spazio di cui ha bisogno il tuo team</p>
                         </div>
                         <!-- icon 3 -->
                         <div class="column-icon-description">
                             <i class="fa-solid fa-share-nodes"></i>
-                            Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team
+                           <p>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</p>
                         </div>
                         <!-- blue column button -->
                         <div class="column-button">
@@ -240,17 +262,17 @@
                         <!-- icon 1 -->
                         <div class="column-icon-description">
                             <i class="fa-solid fa-user"></i>
-                            1 utente
+                          <p>1 utente</p>
                         </div>
                         <!-- icon 2 -->
                         <div class="column-icon-description">
                             <i class="fa-solid fa-folder"></i>
-                            5 TB di spazio di archiviazione sicuro
+                           <p>5 TB di spazio di archiviazione sicuro</p>
                         </div>
                         <!-- icon 3 -->
                         <div class="column-icon-description">
                             <i class="fa-solid fa-share-nodes"></i>
-                            Funzioni di produttività premium e condivisione file semplice e sicura
+                           <p>Funzioni di produttività premium e condivisione file semplice e sicura</p>
                         </div>
                         <!-- blue column button -->
                         <div class="column-button">
@@ -314,7 +336,8 @@
                 </div>
                 <div class="col-30">
                     <h4 class="padding-bottom2">Entra in contatto con un partner DropBox</h4>
-                    <p class="padding-bottom2">Trova un partner DropBox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per
+                    <p class="padding-bottom2">Trova un partner DropBox e HelloSign di fiducia. Ottieni le soluzioni e i
+                        servizi necessari per
                         raggiungere i tuoi obiettivi aziendali,tra cui implementazione,integrazione,gestione e supporto
                         continui.</p>
                     <button class="btn-small">Trova un partner</button>

@@ -6,6 +6,7 @@
 
 body {
     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -63,10 +64,10 @@ nav {
 }
 
 .nav-container ul {
-     margin: 0%;
-     list-style: none;
-     display: flex;
-     gap: 2rem;
+    margin: 0%;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
 
 
@@ -154,7 +155,7 @@ nav {
 .row-buisness {
     display: flex;
     flex-wrap: wrap;
-    gap:1rem;
+    gap: 1rem;
 }
 
 .row-space {
@@ -261,7 +262,19 @@ nav {
 
 .column-icon-description {
     padding-bottom: 1rem;
+    position: relative;
 }
+
+.column-icon-description i {
+    position: absolute;
+    top: 3px;
+}
+
+.column-icon-description p {
+    position: relative;
+    left: 20px;
+}
+
 
 .column-button {
     padding-top: 3rem;
@@ -339,6 +352,13 @@ nav {
     object-fit: contain;
 }
 
+.FAQ h5:hover {
+    cursor: pointer;
+}
+
+.FAQ .FAQ-arrow i:hover {
+    cursor: pointer;
+}
 
 .FAQ .container>div {
     padding-left: 0;
@@ -407,4 +427,92 @@ nav {
     border-bottom: 1px solid white;
     width: 15%;
     padding-top: 6rem;
+}
+
+.li-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    animation: growDown 0.3s ease-in-out forwards;
+    transform-origin: top center;
+    padding-top: 4px;
+}
+
+.li-dropdown a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: grey;
+
+
+}
+
+.dropdown:hover .li-dropdown {
+    display: block;
+}
+
+.li-dropdown a:hover {
+    background-color: rgba(0, 0, 245, 0.7);
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.arrow-container {
+    height: 135px;
+}
+
+.arrow-animation {
+    color: black;
+    padding-top: 1rem;
+    font-size: 2rem;
+    animation: arrowDrop 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    position: relative;
+}
+
+.arrow-animation:hover {
+    cursor: pointer;
+}
+
+
+
+
+/* animazione nav link */
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+
+    80% {
+        transform: scaleY(1.1)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
+/*  jumbo arrow animation */
+@keyframes arrowDrop {
+    0% {
+        top: 0;
+    }
+
+    30% {
+        top: 65%;
+    }
+
+    55% {
+        top: 10%;
+    }
+
+    100% {
+        top: 65%;
+    }
 }
